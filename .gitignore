@@ -1,5 +1,7 @@
 # Environment and IDE
 .env
+.env.*
+!.env.template
 .venv/
 venv/
 __pycache__/

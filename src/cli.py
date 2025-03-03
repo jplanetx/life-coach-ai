@@ -50,9 +50,19 @@ class LifeCoachCLI:
                 )
                 
                 if response["status"] == "success":
-                    print(f"\n{response['integrated_response']}")
+                    # Format and display the response
+                    print("\n" + "="*50)
+                    print(response["integrated_response"])
+                    print("="*50)
+                    
+                    # Show any additional insights if available
+                    if response.get("related_responses"):
+                        print("\nAdditional Insights:")
+                        for agent_id, resp in response["related_responses"].items():
+                            if resp.get("confidence", 0) > 0.7:
+                                print(f"\n• {resp['response']}")
                 else:
-                    print(f"\nError: {response['error']}")
+                    print(f"\nError: {response.get('error', 'Unknown error occurred')}")
                     
             except KeyboardInterrupt:
                 print("\nSession terminated by user.")
@@ -66,24 +76,35 @@ class LifeCoachCLI:
         print("\nTo provide better guidance, I'd like to know a bit about you.")
         
         # Collect industry information
-        print("\nWhat industry are you in or interested in?")
+        print("\nWhat industry are you primarily working in?")
         print("Available industries: technology, healthcare, finance")
-        industry = input("> ").lower()
+        industry_input = input("> ").lower().strip()
+        # Extract primary industry from longer response
+        industry = next((ind for ind in ["technology", "healthcare", "finance"] 
+                        if ind in industry_input), "technology")
+        
+        # Collect professional background
+        print("\nBriefly describe your professional background (optional, press Enter to skip):")
+        background = input("> ").strip()
         
         # Collect skills
         print("\nWhat are your key skills? (comma-separated list)")
         skills_input = input("> ")
-        skills = [skill.strip() for skill in skills_input.split(",")]
+        skills = [skill.strip() for skill in skills_input.split(",") if skill.strip()]
         
         # Collect career goals
-        print("\nWhat role are you targeting? (e.g., data_scientist, software_engineer, product_manager)")
-        target_role = input("> ").lower()
+        print("\nWhat roles are you targeting? (comma-separated list)")
+        print("Examples: data_scientist, software_engineer, product_manager, customer_success_manager")
+        roles_input = input("> ")
+        target_roles = [role.strip() for role in roles_input.split(",") if role.strip()]
         
         self.session_data = {
             "industry": industry,
+            "professional_history": background if background else None,
             "skills": skills,
             "career_goals": {
-                "target_role": target_role
+                "target_roles": target_roles,
+                "primary_role": target_roles[0] if target_roles else None
             }
         }
         

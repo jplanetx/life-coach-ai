@@ -29,12 +29,12 @@ class CareerCoachAgent(BaseAgent):
     def _initialize_llm(self):
         """Initialize the Google Gemini model."""
         temperature = float(os.getenv("TEMPERATURE", "0.7"))
-        model = os.getenv("MODEL_NAME", "gemini-pro")
         
         return ChatGoogleGenerativeAI(
-            model=model,
+            model="gemini-1.0-pro",  # Updated model name
             temperature=temperature,
-            convert_system_message_to_human=True
+            convert_system_message_to_human=True,
+            google_api_key=os.getenv("GOOGLE_API_KEY")
         )
 
     def _load_career_resources(self) -> None:
