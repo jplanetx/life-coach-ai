@@ -1,0 +1,373 @@
+{
+    "roles": {
+        "data_scientist": {
+            "required_skills": [
+                "python",
+                "machine learning",
+                "statistics",
+                "data visualization",
+                "sql"
+            ],
+            "recommended_skills": [
+                "deep learning",
+                "big data",
+                "cloud platforms",
+                "communication"
+            ],
+            "learning_paths": {
+                "beginner": [
+                    {
+                        "skill": "python",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Python for Data Science",
+                                "platform": "Coursera",
+                                "duration": "4 weeks"
+                            }
+                        ]
+                    },
+                    {
+                        "skill": "statistics",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Statistics Fundamentals",
+                                "platform": "edX",
+                                "duration": "6 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "intermediate": [
+                    {
+                        "skill": "machine learning",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Machine Learning Specialization",
+                                "platform": "Coursera",
+                                "duration": "3 months"
+                            }
+                        ]
+                    }
+                ],
+                "advanced": [
+                    {
+                        "skill": "deep learning",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Deep Learning Specialization",
+                                "platform": "Coursera",
+                                "duration": "5 months"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "software_engineer": {
+            "required_skills": [
+                "programming fundamentals",
+                "data structures",
+                "algorithms",
+                "version control",
+                "testing"
+            ],
+            "recommended_skills": [
+                "cloud services",
+                "system design",
+                "agile methodologies",
+                "CI/CD"
+            ],
+            "learning_paths": {
+                "beginner": [
+                    {
+                        "skill": "programming fundamentals",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "CS50",
+                                "platform": "edX",
+                                "duration": "12 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "intermediate": [
+                    {
+                        "skill": "system design",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Software System Design",
+                                "platform": "Udacity",
+                                "duration": "4 months"
+                            }
+                        ]
+                    }
+                ],
+                "advanced": [
+                    {
+                        "skill": "cloud architecture",
+                        "resources": [
+                            {
+                                "type": "certification",
+                                "name": "AWS Solutions Architect",
+                                "platform": "AWS",
+                                "duration": "6 months"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "product_manager": {
+            "required_skills": [
+                "product strategy",
+                "user research",
+                "agile methodologies",
+                "stakeholder management",
+                "data analysis"
+            ],
+            "recommended_skills": [
+                "technical communication",
+                "market research",
+                "prototyping",
+                "business strategy"
+            ],
+            "learning_paths": {
+                "beginner": [
+                    {
+                        "skill": "product management fundamentals",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Product Management Essentials",
+                                "platform": "Product School",
+                                "duration": "8 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "intermediate": [
+                    {
+                        "skill": "user research",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "User Research Methods",
+                                "platform": "Coursera",
+                                "duration": "6 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "advanced": [
+                    {
+                        "skill": "product strategy",
+                        "resources": [
+                            {
+                                "type": "course",
+                                "name": "Strategic Product Management",
+                                "platform": "Udacity",
+                                "duration": "3 months"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "customer_success_manager": {
+            "required_skills": [
+                "Customer Success Strategy",
+                "CRM Management",
+                "Customer Experience Design",
+                "Data Analytics",
+                "Product Knowledge",
+                "Communication",
+                "Problem Solving"
+            ],
+            "learning_paths": {
+                "beginner": [
+                    {
+                        "skill": "Customer Success Strategy",
+                        "resources": [
+                            {
+                                "name": "Customer Success Fundamentals",
+                                "platform": "Coursera",
+                                "duration": "4 weeks"
+                            },
+                            {
+                                "name": "Strategic Customer Success",
+                                "platform": "LinkedIn Learning",
+                                "duration": "2 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "intermediate": [
+                    {
+                        "skill": "Data Analytics",
+                        "resources": [
+                            {
+                                "name": "Data Analytics for Customer Success",
+                                "platform": "Udacity",
+                                "duration": "8 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "advanced": [
+                    {
+                        "skill": "AI Integration",
+                        "resources": [
+                            {
+                                "name": "AI in Customer Success",
+                                "platform": "edX",
+                                "duration": "12 weeks"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "operations_manager": {
+            "required_skills": [
+                "Process Management",
+                "Business Analytics",
+                "Team Leadership",
+                "Strategic Planning",
+                "Change Management",
+                "Project Management",
+                "Operational Excellence"
+            ],
+            "learning_paths": {
+                "beginner": [
+                    {
+                        "skill": "Process Management",
+                        "resources": [
+                            {
+                                "name": "Business Process Management",
+                                "platform": "Coursera",
+                                "duration": "6 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "intermediate": [
+                    {
+                        "skill": "Business Analytics",
+                        "resources": [
+                            {
+                                "name": "Business Analytics and Intelligence",
+                                "platform": "Harvard Online",
+                                "duration": "8 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "advanced": [
+                    {
+                        "skill": "Strategic Planning",
+                        "resources": [
+                            {
+                                "name": "Strategic Operations Management",
+                                "platform": "MIT OpenCourseWare",
+                                "duration": "12 weeks"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "director_of_customer_success": {
+            "required_skills": [
+                "Strategic Leadership",
+                "Customer Success Strategy",
+                "Team Management",
+                "Business Strategy",
+                "Revenue Growth",
+                "Stakeholder Management",
+                "Change Management"
+            ],
+            "learning_paths": {
+                "beginner": [
+                    {
+                        "skill": "Strategic Leadership",
+                        "resources": [
+                            {
+                                "name": "Strategic Leadership and Management",
+                                "platform": "INSEAD Online",
+                                "duration": "12 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "intermediate": [
+                    {
+                        "skill": "Revenue Growth",
+                        "resources": [
+                            {
+                                "name": "Revenue Operations Leadership",
+                                "platform": "Sales Impact Academy",
+                                "duration": "8 weeks"
+                            }
+                        ]
+                    }
+                ],
+                "advanced": [
+                    {
+                        "skill": "Business Strategy",
+                        "resources": [
+                            {
+                                "name": "Advanced Business Strategy",
+                                "platform": "Wharton Online",
+                                "duration": "12 weeks"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "skill_trends": {
+        "high_growth": [
+            "artificial intelligence",
+            "cloud computing",
+            "cybersecurity",
+            "data science",
+            "blockchain"
+        ],
+        "stable": [
+            "project management",
+            "software development",
+            "business analysis",
+            "UX design"
+        ],
+        "emerging": [
+            "quantum computing",
+            "AR/VR development",
+            "edge computing",
+            "sustainable technology"
+        ]
+    },
+    "learning_platforms": {
+        "Coursera": {
+            "specialties": ["technology", "business", "data science"],
+            "certification_value": "high",
+            "cost_level": "medium"
+        },
+        "Udacity": {
+            "specialties": ["programming", "artificial intelligence", "cloud"],
+            "certification_value": "high",
+            "cost_level": "high"
+        },
+        "edX": {
+            "specialties": ["computer science", "business", "engineering"],
+            "certification_value": "high",
+            "cost_level": "medium"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+# Environment and IDE
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# Package and distribution files
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Local development
+*.log
+.coverage
+htmlcov/
+.pytest_cache/

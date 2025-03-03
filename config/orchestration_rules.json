@@ -1,0 +1,87 @@
+{
+    "domain_relationships": {
+        "career": {
+            "related_domains": ["finance", "health"],
+            "impact_weights": {
+                "finance": 0.8,
+                "health": 0.6
+            }
+        },
+        "finance": {
+            "related_domains": ["career", "health"],
+            "impact_weights": {
+                "career": 0.7,
+                "health": 0.5
+            }
+        },
+        "health": {
+            "related_domains": ["career", "finance"],
+            "impact_weights": {
+                "career": 0.6,
+                "finance": 0.4
+            }
+        }
+    },
+    "response_integration": {
+        "confidence_threshold": 0.7,
+        "max_insights_per_response": 3,
+        "priority_weights": {
+            "primary_agent": 1.0,
+            "domain_expert": 0.8,
+            "related_domain": 0.6
+        }
+    },
+    "conflict_resolution": {
+        "priority_rules": {
+            "health_safety": 1.0,
+            "financial_security": 0.9,
+            "career_growth": 0.8,
+            "work_life_balance": 0.7
+        },
+        "resolution_strategies": {
+            "time_conflict": "prioritize_urgent",
+            "resource_conflict": "optimize_allocation",
+            "advice_conflict": "weighted_consensus"
+        }
+    },
+    "context_analysis": {
+        "temporal_weights": {
+            "recent": 0.8,
+            "medium_term": 0.5,
+            "historical": 0.3
+        },
+        "pattern_recognition": {
+            "min_occurrences": 3,
+            "time_window_days": 30,
+            "confidence_threshold": 0.6
+        }
+    },
+    "learning_parameters": {
+        "update_frequency": 10,
+        "min_data_points": 5,
+        "adaptation_rate": 0.1
+    },
+    "agent_coordination": {
+        "confidence_threshold": 0.7,
+        "max_concurrent_agents": 3,
+        "response_timeout_seconds": 30
+    },
+    "domain_expertise": {
+        "career": {
+            "primary_agent": "career-coach",
+            "required_context": ["industry", "skills", "career_goals"],
+            "confidence_weights": {
+                "skill_match": 0.4,
+                "industry_knowledge": 0.3,
+                "historical_success": 0.3
+            }
+        }
+    },
+    "interaction_patterns": {
+        "career_guidance": {
+            "triggers": ["career", "job", "skill", "industry"],
+            "required_agents": ["career-coach"],
+            "context_requirements": ["industry", "skills"]
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "technology": {
+        "trends": [
+            {
+                "name": "AI and Machine Learning",
+                "growth_rate": 0.35,
+                "skills_in_demand": [
+                    "Python",
+                    "Machine Learning",
+                    "Deep Learning",
+                    "AI Model Management",
+                    "Data Science",
+                    "MLOps"
+                ]
+            },
+            {
+                "name": "Customer Experience Tech",
+                "growth_rate": 0.28,
+                "skills_in_demand": [
+                    "Customer Success Strategy",
+                    "CX Design",
+                    "Data Analytics",
+                    "AI Integration",
+                    "Process Automation",
+                    "CRM Management"
+                ]
+            },
+            {
+                "name": "Business Operations",
+                "growth_rate": 0.25,
+                "skills_in_demand": [
+                    "Process Management",
+                    "Business Analytics",
+                    "Strategic Planning",
+                    "Team Leadership",
+                    "Change Management",
+                    "Operational Excellence"
+                ]
+            }
+        ],
+        "market_outlook": "very positive",
+        "remote_work_availability": "high",
+        "average_salary_growth": 0.12
+    },
+    "healthcare": {
+        "trends": [
+            {
+                "name": "Digital Health",
+                "growth_rate": 0.30,
+                "skills_in_demand": [
+                    "Healthcare IT",
+                    "Patient Experience",
+                    "Data Security",
+                    "Digital Transformation",
+                    "Compliance"
+                ]
+            }
+        ],
+        "market_outlook": "positive",
+        "remote_work_availability": "medium",
+        "average_salary_growth": 0.08
+    },
+    "finance": {
+        "trends": [
+            {
+                "name": "FinTech",
+                "growth_rate": 0.32,
+                "skills_in_demand": [
+                    "Financial Analysis",
+                    "Blockchain",
+                    "Digital Banking",
+                    "Risk Management",
+                    "Compliance"
+                ]
+            }
+        ],
+        "market_outlook": "positive",
+        "remote_work_availability": "medium",
+        "average_salary_growth": 0.10
+    }
+}

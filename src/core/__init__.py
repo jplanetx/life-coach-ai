@@ -1,0 +1,1 @@
+"""Core components of the Life Coach AI system."""
